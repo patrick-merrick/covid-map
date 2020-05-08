@@ -10,6 +10,37 @@
         
   <link href="assets\css\style.css" rel="stylesheet">
 
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['bar']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      let data = google.visualization.arrayToDataTable([
+        ['Top Washington State Counties', 'Cases', 'Total Deaths'],
+        ['King', 7182, 482],
+        ['Snohomish', 2889, 114],
+        ['Yakima', 1658, 57],
+        ['Pierce', 1631, 57],
+        ['Benton', 665, 51],
+        ['Franklin', 501, 14],
+        ['Skagit', 389, 13],
+        ['Spokane', 386, 25],
+      ]);
+
+      let options = {
+        chart: {
+          title: 'February 26 - May 7, 2020',
+          subtitle: 'Source: The New ork Times',
+        }
+      };
+
+      let chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+  </script>
+
     </head>
     <body>
          <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -38,4 +69,9 @@
         </li>
       </ul>
     </section>
-  </nav
+  </nav>
+  <h1 class="mb-0">Covid 19
+    <span class="text-primary">GRAPH</span>
+  </h1>
+  
+  <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
