@@ -34,6 +34,7 @@ function displayInfo() {
     console.log(response);
     totalDeaths = response[0].covid_death;
     totalCases = response[0].covid_death;
+    // hi guys
 
 
 
