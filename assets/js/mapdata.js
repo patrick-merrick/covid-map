@@ -1,6 +1,6 @@
 simplemaps_statemap_mapdata={
   main_settings: {
-    width: "700",
+    width: "1500",
     background_color: "#FFFFFF",
     background_transparent: "yes",
     popups: "detect",
@@ -26,7 +26,7 @@ simplemaps_statemap_mapdata={
     all_locations_hidden: "no",
     label_color: "#ffffff",
     label_hover_color: "#ffffff",
-    label_size: 22,
+    label_size: 40,
     label_font: "Arial",
     hide_labels: "no",
     manual_zoom: "no",
@@ -51,7 +51,7 @@ simplemaps_statemap_mapdata={
     popup_nocss: "no",
     div: "map",
     auto_load: "yes",
-    rotate: "0",
+    rotate: "-14",
     url_new_tab: "yes",
     images_directory: "default",
     import_labels: "no",
